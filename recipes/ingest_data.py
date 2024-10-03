@@ -40,7 +40,7 @@ def ingest_data():
             "protein": float(row['protein']),
             "fat": float(row['fat']),
             "sodium": float(row['sodium']),
-            "tags": [col for col in data.columns if row[col] == 1.0] or ['no_tags']  # Ensure not empty
+            "tags": [col for col in data.columns if row[col] == 1.0] or ['no_tags']  
         }
 
         print(f"Indexing document: {document}")
